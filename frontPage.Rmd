@@ -1,0 +1,76 @@
+---
+output: 
+  pdf_document:
+      number_section: yes
+header-includes:
+- \usepackage{fancyhdr}
+- \usepackage{graphicx}
+- \pagestyle{fancy}
+- \setlength{\headheight}{30pt}
+- \fancyfoot[L]{}
+- \fancyhead[L]{\includegraphics[height=10mm,width=38mm]{UCLouvain - ecole-statistique.jpg}}
+- \fancyhead[R]{}
+- \fancyfoot[C]{\thepage}
+- \fancyfoot[R]{\textit{Mathias Dah Fienon}}
+- \usepackage{float}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, cache = TRUE, comment = "", include = TRUE, warning = FALSE, message = FALSE)
+```
+
+\thispagestyle{empty}
+\pagenumbering{gobble}
+\includegraphics[width=3in, height=0.65in]{UCLouvain - ecole-statistique.jpg}
+\hfill
+\includegraphics[width=2in, height=0.6in]{logo_fac_scien.png} 
+\vspace{1.5cm}
+\newline
+\vspace{1cm}
+\begin{center}
+    \hrulefill
+    \vspace{1.2cm}
+    \centerline{\textbf{\Large LSTAT2150}}
+    \vspace{0.5cm}
+    \newline
+    \textbf{\Large NON PARAMETRIC CURVE ESTIMATION: }
+    \vspace{0.2cm}
+    \textbf{\Large SMOOTHING METHODS }
+\end{center}
+\vspace{0.8cm}
+\hrulefill
+\vspace{1.2cm}
+\begin{center}
+    \centerline{\textbf{\Large Project 34 :}}
+    \vspace{0.5cm}
+    \textbf{\Large \textit{Confdence intervals for non-parametric regression}} 
+\end{center}
+\vspace{1.2cm}
+\begin{center}
+    \textbf{\Large Project report} 
+\end{center}
+\vspace{1.2cm}
+\begin{center}
+    \textbf{\large Author : } 
+\end{center}
+\vspace{0.1cm}
+\begin{center}
+    \textbf{ \Large Mathias Dah Fienon, } \textit{\large noma :04452100 }
+\end{center}
+\vspace{4cm}
+\begin{center}
+    \textbf{\Large Academic year: } \textit{\large 2022-2023}
+\end{center}
+
+\newpage
+
+\centerline{\huge \textit{Confdence intervals for non-parametric regression}}
+\tableofcontents
+
+
+\newpage
+\pagenumbering{arabic}
+
+```{r, child="project.Rmd"}
+```
+
